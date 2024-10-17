@@ -1,0 +1,6 @@
+2024-08-30 09:16:28,236 +0530 [main] WARN  (Demo.java:28) - This is Warning Log
+2024-08-30 09:16:28,236 +0530 [main] WARN  (Demo.java:28) - This is Warning Log
+2024-08-30 09:16:28,239 +0530 [main] ERROR (Demo.java:30) - This is Error log
+2024-08-30 09:16:28,239 +0530 [main] ERROR (Demo.java:30) - This is Error log
+2024-08-30 09:16:28,239 +0530 [main] FATAL (Demo.java:31) - This is Fatal log
+2024-08-30 09:16:28,239 +0530 [main] FATAL (Demo.java:31) - This is Fatal log

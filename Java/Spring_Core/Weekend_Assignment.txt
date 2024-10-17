@@ -1,0 +1,15 @@
+Weekend Assignment:
+-----------------------
+1. Learn and Practice spring basic concepts
+2. learn and practice all spring core annotation
+3. learn and practice one example on Spring MVC Architecture
+4. learn and practice Hibernate concepts crud operations
+
+Most important
+
+1.Revise and learn about REST API theory
+2. Learn and practice REST API crud operations using spring boot and postman for testing
+
+Note: Convert Springboot EmployeeRestAPI project into restapi with layered architecture and jdbc
+
+3. revise and practice all spring rest api annotations

@@ -1,0 +1,35 @@
+
+
+Note: We need to add spring / spring boot project
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+
+Patterns:
+========
+[A-Z]  
+[a-z]
+[A-Za-z]  Ex;  A , b c  x , S i 
+[0-9]    0 , 4 ,5  ,2
+[@#$]    @,$,#
+[a-z]{4}   ex:  fine , done , king , pink
+
+[A-Z][a-z]     Ex: Am , Hi , Is , Do
+
+[7-9]   8 , 7 , 9 
+[A-Z a-z 0-9]   A , a , X , t , 4 , 7 
+^[A-Z]...[a-z]$
+
+
+Following Annotation Usages
+
+@NotNull	Char Sequence, Collection, Map, or Array object can be validated with this and they should not be null but can be empty
+@NotEmpty	Char Sequence, Collection, Map, or Array object can be validated with this and they should not be null and not empty
+@NotBlank	Char Sequence, Collection, Map, or Array objects can be validated with this and they should not be null and not empty and not blank
+@Min	Given Minimum value has to be satisfied
+@Max	Given Maximum value has to be satisfied
+@Size	Field size should be less than or greater than the specified field size
+@Email	Email can be validated with this
+@Pattern	Given RegEx Pattern has to be satisfied.

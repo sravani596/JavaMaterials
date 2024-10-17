@@ -1,0 +1,131 @@
+OOPs:
+Object Oriented Programming Concepts
+
+1.Class and Object
+2.Inheritance
+3.Polymorphism (method overloading and overriding)
+4.Encapsulation
+5.Abstraction
+
+Class:
+-> Class is a blueprint for which instances/objects will be created by JVM.
+-> Class is imaginary in nature.
+-> Class is a collection of objects. 
+
+
+Object/Instance:
+->Object is a physical entity which exist in this world.
+-> Objects are instances of classes.
+
+
+
+
+
+
+java.lang.Object;
+
+public class Object {
+
+
+	public Object(){  // super();
+
+		// logic to create object
+		// logic to generate code
+		// logic to create copy of instance variables
+		// logic to allocate memory to the object and instance vars
+	
+
+	}
+
+
+	public String toString(){  return  pkg.ClasName@hashcode;}
+	boolean equals(){ it compares hashcode of two diff object}
+	clone();
+	hashcode();
+	getClass();
+	notify()
+	notifyAll()
+	wait();
+
+
+
+
+}
+
+
+
+Types of variables:
+
+1. instance variables
+
+Instance variables are declare inside class outside all the blocks without static keyword.
+
+Also known as object level variables.
+Every Object will be assign with seperate copy of instance variables in heap memory by JVM.
+Jvm will assign default values to the instance variables.
+We can access instance variables using object reference.
+
+NOte: Instance variables can be initialize by using parameter constructors or setter.
+
+
+2. static variables
+
+static variables are declare inside class outside all the blocks with static keyword.
+
+Also known as class level variables
+Every Object will be assign with single/same copy of static variables  by JVM.
+Jvm will assign default values to the static variables.
+static members can be access by using object reference as well as class name.
+
+3. Local variables
+Variable declare inside block/methods  or parameters are known as local variables.
+Also known as Thread level variables
+For local variables JVM cannot assign default values , its our responsibility to assign values to the local variables.
+local variables can be accessible with in same block.
+
+
+Access Modifiers:
+----------------
+1. default 
+
+any thing which is default can be accessible with in class as well as in in current package
+
+2. private
+
+private members can be accessible only inside the current class
+
+3. public (global access modifier)
+
+public members can be accessible any where (with in current package as well as outside the package)
+
+4. protected
+ i. by default it act as default access modifier
+ ii. in case of inheritance it can be accessible outside the current package also (act as public)
+
+Ex: pkg1  (acting as default)
+--> protected class Book{ public static void m1(); }
+--> public class App {   new Book();}
+
+
+Ex: pkg2  (acting as public)
+
+import  pkg1;
+
+-->  public class Demo extends Book{
+
+		Book.m1();
+
+		
+	
+}
+
+
+
+
+
+
+
+
+
+
+

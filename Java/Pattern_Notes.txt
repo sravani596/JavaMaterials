@@ -1,0 +1,33 @@
+
+
+regex = regular expression
+
+
+Note: we can use patterns only for text or strings
+
+[A-Z]          // A , C  , F , P   , Q , X , Z    // valid inputs
+
+[a-z][a-z]   	 // hi , be , to  , in   , aa , zz  // valid inputs   
+		//  Hi , To , Not , not   // invalid
+
+
+[A-Z][a-z][a-z]   // Not , Bye  , Fox , Tin 
+
+[A-Z a-z]         //  a , A ,  s , B , P , q 
+
+[a-z]{3}  //   fix , tin , not , yes  , tom ,  to
+
+[a-z]{2,5}   // to , tom , tommy 
+
+[0-9]{10}   //    2 , 4 , 6 , 7 
+
+[6-9][0-9]{9}  // 10 digits start with 6/7/8/9
+
+[a-zA-Z0-9]   // A , a , 4 
+
+
+[A-Za-z]{4,12}[@][a-zA-Z]{3,7}[.][a-z]{2,3}  // javeed@gmail.com
+
+
+
+

@@ -1,0 +1,24 @@
+Assignment:
+-----------
+Lab Time: 4:40pm  to 5:05pm
+--------------------------
+Create Project to implement CRUD OPeration using Hibernate.
+Use Layered Architecture existing project
+
+1.Maven project and add Hibernate dependencies
+2.copy hibernate.cfg.xml file into src folder
+3. copy below packages from layered architecture project
+	presentation package 
+	service  package
+	dao package  
+4. In dao layer , delete DBUtil class and copy HibernateUtil
+ Note: add annotations in Pojo/Entity class
+5. Goto  DaoImp class and delete all methods and implement empty methods
+6. In  DaoImp class   get sessionFactory and session objects
+7. Inside methods call hibernate predefined methods to perform crud operation
+	Note: return types need to manage
+   Hint: save()--> insert
+	 update() ---> update
+	  delete() ---> delete
+	   HQL query for selectbyid and selectall	
+

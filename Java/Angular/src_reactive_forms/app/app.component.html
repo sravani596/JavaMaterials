@@ -1,0 +1,30 @@
+
+<h1>REACTIVE FORM DEMO</h1>
+
+
+<form  class="container col-lg-5"   [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+
+      <label> USER NAME</label>  
+ <input type="text" formControlName="username"    class="form-control"  [ngClass]="{ 'is-invalid': submitted  && f['username'].errors }" />  
+         <div style="color:red" *ngIf="f['username'].errors?.['required']" >User Name Mandatory</div>
+        <div style="color:red"   *ngIf="f['username'].errors?.['minlength']" >UserName should be min 4 chars</div>
+      
+         <label> EMAIL </label>
+       <input type="email" formControlName="email" class="form-control"     [ngClass]="{ 'is-invalid': submitted  && f['email'].errors }"/> 
+       <div style="color:red" *ngIf="f['email'].errors?.['required']" >Email Mandatory</div>
+       <div style="color:red"   *ngIf="f['email'].errors?.['email']" >Email should in valid format</div>
+     
+
+        <label> PASSWORD</label> 
+         <input type="text" formControlName="password"  class="form-control"     [ngClass]="{ 'is-invalid': submitted  && f['password'].errors }"/>  
+
+         <div style="color:red" *ngIf="f['password'].errors?.['required']" >Password Mandatory</div>
+        <div style="color:red"   *ngIf="f['password'].errors?.['minlength']" >Password should be min 4 chars</div>
+        <div style="color:red"   *ngIf="f['password'].errors?.['maxlength']" >Password should be max 10 chars</div>
+
+
+
+        <button type="submit"  class="btn btn-danger">Login</button>
+
+
+</form>

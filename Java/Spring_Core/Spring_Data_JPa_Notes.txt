@@ -1,0 +1,40 @@
+
+interfaces in spring data JPA:
+===============================
+
+Respository<T,ID>
+-----------------
+
+T  save(T t);  // insert or update
+
+Optional<T> findById(id);   // get record by id (p.k)  or select one
+
+void deleteById(id);   // remove record by id
+void  delete(T t);   // remove record by Entity obj
+void deleteAll();       // remove all records
+
+long count();
+
+
+CrudRepository<T,ID>
+
+List<T>  findAll();    // get all records or select all
+
+
+
+JpaRepository<T,ID>
+
+
+
+Repository
+	|- CrudRepository
+	            |- JpaRepository
+
+
+		
+
+
+
+
+
+

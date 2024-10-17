@@ -1,0 +1,16 @@
+
+	Weekend Assignment:
+
+	1. Revise and practice Typescript concepts
+	2. Learn Angular Basic concepts
+		component,directives,pipes,databinding (custom pipe,directive)
+	3. Angular forms (template,reactive)
+        4. Routing  with Navbar  and navigate() function
+
+	Read about Component life cycle methods
+
+	Self learning
+	1. REST API Http methods (GET,POST,PUT,DELETE)
+	2. what is json data?
+	3. what is json-server (do instal using npm)
+	 

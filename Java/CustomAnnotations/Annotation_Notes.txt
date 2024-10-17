@@ -1,0 +1,38 @@
+
+	
+Targets of Annotations:
+----------------------
+
+
+@MyAnnotation
+
+
+
+
+
+@MyAnnotation
+public class  Test{
+
+
+	@MyAnnotation
+	public void m1(){
+
+
+		@MyAnnotation
+		int x;
+
+	}
+
+
+	@MyAnnotation
+	public  Test(  @MyAnnotation int  id){
+
+
+
+	}
+
+
+
+
+}
+

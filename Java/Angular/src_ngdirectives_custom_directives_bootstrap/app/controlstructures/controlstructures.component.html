@@ -1,0 +1,88 @@
+<p ngNonBindable >{{controlstructures works!}}</p>
+
+<h2 class="alert alert-danger">This is bootstrap color magic</h2>
+
+<img class="rounded-circle"  src="assets/spiderman.png">
+ <br>
+
+<h2  [ngClass]="{cls1:true}">This is from NgClass directives</h2>
+
+<h1 id="myid" >Welcome to Directives</h1>
+
+<!-- <h1  *ngIf="5 > 3">Hi I am Trainer</h1> -->
+
+<h1    *ngIf="true">Hi I am Trainer</h1>
+
+
+<table  border="1"  [ngStyle]="{'color':'blue' , 'background-color':bgcolor }">
+
+  <tr  *ngFor="let emp of employees" >   <td>{{emp.id}}</td> <td>{{emp.ename}}</td><td>{{emp.salary}}</td>   </tr>
+
+
+</table>
+
+
+Bootstrap table design: <br>
+
+<div class=" container  col-md-4 " >
+<table  class="table table-striped ">
+
+    <tr  *ngFor="let emp of employees" >   <td>{{emp.id}}</td> <td>{{emp.ename}}</td><td>{{emp.salary}}</td>   </tr>
+  
+  
+  </table>
+
+  </div>
+
+
+List: <br>
+
+<ul *ngFor="let e1 of employees; let i = index">
+
+    <li>{{i}}  {{e1.id}}  {{e1.ename}}</li>
+
+</ul>
+
+Dropdown Menu <br>
+Select Salary: <select>
+
+                <option   *ngFor="let e1 of employees" value={{e1.salary}}>{{e1.salary}}</option>
+
+                </select>
+
+                <br>
+ 
+Skill IS : {{skill}}
+                <br>
+
+  <form action="">
+
+    Tech Skill: <input type="text" name="skill"  [(ngModel)]="skill">
+
+  </form>
+                
+<br>
+
+  <!-- <div  [ngSwitch]="skill">
+
+    <div  *ngSwitchCase="'java'">Welcome Java Dev</div>
+    <div  *ngSwitchCase="'sql'">Welcome SQL  Dev</div>
+
+    <div  *ngSwitchCase="'python'">Welcome Python Dev</div>
+    <div  *ngSwitchCase="'dotnet'">Welcome .Net  Dev</div>
+
+    <div  *ngSwitchDefault>Enter valid skill</div>
+
+  </div> -->
+
+  <div  [ngSwitch]="skill">
+
+    <div  *ngSwitchCase="'java'">  <img src="assets/java.png" alt="java logo"> </div>
+    <div  *ngSwitchCase="'sql'"> <img src="assets/sql.png" alt="sql logo"> </div>
+
+    <div  *ngSwitchCase="'python'"> <img src="assets/python.png" alt="python logo"></div>
+    <div  *ngSwitchCase="'dotnet'"> <img src="assets/dotnet.png" alt="dotnet logo"> </div>
+
+    <div  *ngSwitchDefault> <img src="assets/default.png" alt="invalid logo"> </div>
+
+  </div>

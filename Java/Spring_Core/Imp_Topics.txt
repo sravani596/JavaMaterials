@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+What is HATEOAS and implements in Spring Data REST.
+
+What are 
+1.Server-Sent Events
+2.RSocket 
+
+3.ORM Mappings 
+one to one
+one to many
+many to many
+
+
+
+Angular:
+Router Guards
+Angular/Google Materials UI (just like Bootstrap)
+
+
+
+
+
+
+
+
+
+
+
+Java:
+
+Java-8 Features
+
+Concurrency Multi threading
+
+Servlet
+
+Spring Framework
+Spring MVC 
+
+SpringBoot
+
+REST API
+REST MVC
+
+Hibernate 
+
+Hibernate with JPA (Spring Data JPA)
+
+Microservices
+Eureka client and server
+
+JUnit Testing
+
+Logging
+
+Reactive Programming in spring 
+
+
+----------------------------------------
+
+HTML , CSS , Bootstrap , Javascript
+
+Angular everything important
+Advance Angular
+
+SQL Basics 
+
+--------------------
+
+Design patterns
+Networking concepts
+Agile
+maven tool
+
+git commands
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

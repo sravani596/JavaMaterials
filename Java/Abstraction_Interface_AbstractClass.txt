@@ -1,0 +1,115 @@
+Interface: Medium to communication
+
+
+
+Developers:
+Specification or Requirement which will be implemented by developer.
+
+End User:
+Set of services given to the user in the form UI.
+
+
+public interface  IBank {
+
+
+	public abstract  void  withdraw();
+
+		void  deposit();
+
+
+	
+
+
+}
+
+
+public class   BankImp implements  IBank{
+
+
+	void withdraw(){
+
+		//logic for withdraw
+	}
+
+	void deposit(){
+
+
+		// logic for deposit
+	}
+
+
+}
+
+
+Abstraction: Highlighting set of services to the user and hiding implementation code.
+
+Abstraction = interfaces and abstract classes or implementation classes
+
+Abstract class: 
+It is java class which can have abstract methods as well as concrete methods.
+Abstract class cannot be instantiated (abstract class objects cannot be created)
+  
+
+Example:
+
+IBank  b =   new BankImp2();
+
+
+
+java.util.*;
+
+Scanner class:
+
+	next(); // read single string or single word
+	nextLine(); // read one line
+"500"	nextInt(); // read string and convert that into integer format
+	
+	nextXXX(); 
+	
+	
+
+
+java.io.*;
+
+classes:
+InputStream
+PrintStream --> println();
+
+
+Utility:
+
+--------
+java.lang.*;
+class System{
+public static InputStream in = new InputStream();
+public static PrintStream out = new PrintStream();
+public static PrintStream err = new PrintStream();
+
+public static  void exit(); // it kills JVM
+
+}
+
+
+
+
+
+
+
+IBank , Account , StudentInterface ,  Employee
+
+
+
+List list = new ArrayList();
+
+IBank b = new BankImp2();  // polymorphism using interface or abstraction
+
+
+
+
+
+
+
+
+
+
+

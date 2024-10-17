@@ -1,0 +1,37 @@
+version: '2.29'
+ 
+services:
+  mysqldb:
+    container_name: mysqldb
+    image: mysql:latest
+    environment:
+      MYSQL_PASSWORD: ABC596@sravs
+      MYSQL_DATABASE: custdb
+      MYSQL_ROOT_PASSWORD: ABC596@sravs
+    ports:
+      - 3303:3306
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    networks:  
+      customer-mysql-net:
+   
+  springboot-customer-service:
+    container_name: springboot-customer-service
+    build:
+      context: ./customerservice
+      dockerfile: Dockerfile
+    ports:
+      - 9000:8100
+    depends_on:
+      - mysqldb
+    environment:
+      - MYSQL_HOST: mysqldb
+      - MYSQL_USER: root
+      - MYSQL_PASSWORD: ABC596@sravs
+      - MYSQL_DATABASE: custdb
+    networks:
+      customer-mysql-net:
+    restart: on-failure
+ 
+networks:
+  customer-mysql-net:

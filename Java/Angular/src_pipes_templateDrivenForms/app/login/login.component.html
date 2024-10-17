@@ -1,0 +1,29 @@
+<p>login works!</p>
+
+
+
+<form class="container col-md-5"   #empForm=ngForm  (ngSubmit)="getFormData(empForm.value)">
+
+
+  <div class="form-group"> 
+     <label>Enter EID: </label> 
+     <input type="text" name="eid"   ngModel     required  #eidcontrol="ngModel"       class="form-control" > 
+     <span  style="color:red"  *ngIf="eidcontrol.touched && eidcontrol.invalid">Eid is Mandatory</span>
+    </div>
+
+  <div class="form-group">
+     <label>Enter ENAME: </label> 
+     <input type="text" name="ename"  ngModel required #enamecontrol="ngModel"  class="form-control" >
+     <span  style="color:red"  *ngIf="enamecontrol.touched && enamecontrol.invalid">EName is Mandatory</span> 
+     </div>
+
+  <div class="form-group"> 
+     <label>Enter SALARY: </label>
+      <input type="text" name="salary" ngModel  required  #salarycontrol="ngModel" class="form-control" > 
+      <span  style="color:red"  *ngIf="salarycontrol.touched && salarycontrol.invalid">Salary is Mandatory</span>
+     </div>
+
+    <button type="submit" class="btn btn-success"   [disabled]="empForm.invalid">Submit</button>
+
+
+</form>

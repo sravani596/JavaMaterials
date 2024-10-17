@@ -1,0 +1,71 @@
+
+Technologies :
+
+Backend :  Java-8  , SpringBoot , REST API ,Validations, Spring Data JPA ,
+		Spring Security , Jwt for authorization
+
+Database: Mysql Database
+
+Tools:  Maven , Junit , Log4j , Postman/Swagger-UI
+
+
+
+Front end: SPA  Angular 15 , HTML-5,CSS , Bootstrap 
+
+Forms , Input validations , Routing , Header , Footer
+
+
+Start with Backend 
+------------------:
+
+1.spring boot project with all required dependencies
+2. Entity classes and DTO classes
+3. Repository for each entity
+4. Service interfaces and Implementation classes
+5. RestControllers
+6. Config class , Filters 
+7. Custom Exception classes
+8. Unit Test classes for service layer
+
+Testing Backend using postman/swagger-ui
+
+
+
+Front end 
+----------:
+
+Angular 
+1. create empty components 
+2. Routing for components
+3. Model / pojo
+4. User defined services 
+5. HTML templates 
+6. CSS/Bootstrap
+
+
+
+
+Spring Data JPA :
+------------------
+Hibernate or JPA or spring Data JPA
+mappings
+1 one to one
+2 one to many
+3 many to many
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

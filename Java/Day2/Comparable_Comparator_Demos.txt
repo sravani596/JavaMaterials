@@ -1,0 +1,44 @@
+
+
+
+java.lang.Comparable
+
+compareTo();
+
+modify existing classs
+
+class Employee implements  Comparable{
+
+	compareTo(){
+
+		//logic to sort
+	}
+
+}
+
+
+
+-----------------------
+java.util.Comparator
+
+compare();
+
+
+class MyComparator  implements  Comparator<Employee>{
+
+	compare(){
+			// logic to sort  any objects
+
+	}
+
+
+}
+
+
+
+Set<Employee>  set = new TreeSet<Employee>(new MyComparator());
+Set<Thread>  set = new TreeSet<Thread>(new MyComparator();
+
+
+
+

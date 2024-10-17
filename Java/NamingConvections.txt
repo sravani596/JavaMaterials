@@ -1,0 +1,111 @@
+packages:
+lower case
+
+syn: domain.company.project.module.submodule;
+
+com.wipro.bank.login.user;
+
+Class/Interface/Enum:
+----------------------
+Initcap 
+
+Object, String, Scanner, System,ArrayList,Vector
+List,Set,Queue,Map
+
+Demo,Student,Employee,BankAccount, Vehicle , Animal ,Shapes
+EmployeeService, EmployeeDAO , EmployeeEntity
+
+constructors:
+--------------
+Initcap  / same as class name
+
+String() , Employee() , BankAccount()
+
+variables/methods:
+-----------------
+camel-case
+
+name,account,scores,balance , accountNumber,studentName
+
+get(),set(), getAll() , getName() , setData() , isValid() 
+
+
+final variables:
+------------------
+final  String  IFSC = "ICICI1234";
+final   double  PI = 3.141;
+
+
+alphabets , numbers , $ and _ 
+
+ex:  int   abc123  = 100;
+      String  _name = "javeed";
+	int  123account ;  // invalid
+
+	String  if = 7.5f;  // invalid
+
+	int   String = 5; // valid
+
+Note:  names are known as Identifiers in programming lang.
+
+
+
+
+
+
+
+
+final  int 	X = 10;
+          X = 30; // INVALID
+
+
+public final class A {
+
+public final void m1(){
+
+ // logic 123
+
+}
+
+}
+
+
+   inheritance or  IS-A relationship
+---------------------------------------------
+class B extends A {  // invalid cant extend final class
+             
+public void m1(){ // invalid cant override final method
+
+ //logic  456
+
+}
+
+
+}
+
+
+Object  o  = new Object();
+
+
+
+In Java when ever object is created following things take place:
+
+JVM perform
+1. memory allocation for object inside heap memory
+2.  instance variables seperate copy will be allocated to object
+3. instance variables will be assign with default values
+4. hashcode generated  and many more
+
+
+
+
+
+
+
+
+
+
+
+
+
+

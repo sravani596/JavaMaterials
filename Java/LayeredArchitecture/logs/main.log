@@ -1,0 +1,9 @@
+2024-08-30 09:24:21,274 +0530 [main] INFO  (EmployeeServiceImp.java:26) - EmployeeService object created...
+2024-08-30 09:24:21,274 +0530 [main] INFO  (EmployeeServiceImp.java:26) - EmployeeService object created...
+2024-08-30 09:24:21,911 +0530 [main] INFO  (Client.java:31) - EMS Application started
+2024-08-30 09:24:21,911 +0530 [main] INFO  (Client.java:31) - EMS Application started
+2024-08-30 09:25:49,451 +0530 [main] INFO  (Client.java:52) - Add option selected
+2024-08-30 09:25:49,451 +0530 [main] INFO  (Client.java:52) - Add option selected
+2024-08-30 09:27:04,202 +0530 [main] DEBUG (EmployeeServiceImp.java:37) - add service called..
+2024-08-30 09:27:04,202 +0530 [main] DEBUG (EmployeeServiceImp.java:37) - add service called..
+2024-08-30 09:27:04,212 +0530 [main] INFO  (EmployeeDaoImp.java:30) - employee data inserted from DAO

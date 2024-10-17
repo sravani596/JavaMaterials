@@ -1,0 +1,39 @@
+
+<h1>WELCOME TO ANGULAR AGAIN</h1>
+
+
+ <h3  cardhover >This is text to verify custom directive </h3>
+
+
+
+    <app-controlstructures></app-controlstructures>
+
+
+
+
+
+<h2>Call update func: {{update()}}</h2>
+
+<h1>Welcome:  {{username}} </h1>  <!--string interpolation from TS to HTML-->
+
+<h1>City: {{city}}</h1>
+
+<form action="">
+
+  User  Name:  <input type="text" name="x"  [value]="username" > <br>
+
+  Two Way DataBinding City:  <input type="text" name="city" [(ngModel)]="city" value="hyd"  > <br>
+
+  <button type="button"  (click)="update()">Click Action</button>
+
+</form>
+
+
+<img [src]="url" alt="my image" >  <br>
+
+
+
+
+
+
+

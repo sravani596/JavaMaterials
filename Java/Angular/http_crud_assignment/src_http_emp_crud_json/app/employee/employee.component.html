@@ -1,0 +1,67 @@
+<p>employee works!</p>
+
+<h1>Employee Component</h1> <br>
+
+
+
+<form class="container col-md-5"   #empForm=ngForm  (ngSubmit)="insertEmp(empForm.value)">
+
+
+    <div class="form-group"> 
+       <label>Enter EID: </label> 
+       <input type="text" name="id"   ngModel     required  #eidcontrol="ngModel"       class="form-control" > 
+       <span  style="color:red"  *ngIf="eidcontrol.touched && eidcontrol.invalid">Eid is Mandatory</span>
+      </div>
+  
+    <div class="form-group">
+       <label>Enter ENAME: </label> 
+       <input type="text" name="ename"  ngModel required #enamecontrol="ngModel"  class="form-control" >
+       <span  style="color:red"  *ngIf="enamecontrol.touched && enamecontrol.invalid">EName is Mandatory</span> 
+       </div>
+  
+    <div class="form-group"> 
+       <label>Enter SALARY: </label>
+        <input type="text" name="salary" ngModel  required  #salarycontrol="ngModel" class="form-control" > 
+        <span  style="color:red"  *ngIf="salarycontrol.touched && salarycontrol.invalid">Salary is Mandatory</span>
+       </div>
+  
+      <button type="submit" class="btn btn-success"   [disabled]="empForm.invalid">Submit</button>
+
+
+<hr>
+
+
+Search Employe Data:
+<hr>
+
+<form class="container col-md-5"   #searchForm=ngForm  (ngSubmit)="search(searchForm.value)">
+
+
+   <div class="form-group"> 
+      <label>Enter EID: </label> 
+      <input type="text" name="id"   ngModel     required  #eidcontrol="ngModel"       class="form-control" > 
+      <span  style="color:red"  *ngIf="eidcontrol.touched && eidcontrol.invalid">Eid is Mandatory</span>
+     </div>
+
+     <button type="submit" class="btn btn-success"   [disabled]="searchForm.invalid">Search</button>
+</form>
+
+
+
+
+
+<button type="button"  (click)="getAllData()">Show Data</button>  <br>
+
+
+<div class="container col-md-5">
+<table class="table table-dark" >
+   <tr>  <th>ID</th> <th>ENAME</th>  <th>SALARY</th> </tr>
+    <tr *ngFor="let emp of empList" >
+      
+      <td>{{emp.id}}</td> <td>{{emp.ename}}</td>  <td>{{emp.salary}}</td>  
+            <button type="button"  class="btn btn-danger" (click)=deleteById(emp.id)>Delete</button>
+   </tr>
+
+
+</table>
+</div>
